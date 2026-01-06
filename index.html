@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amay Chinchmalatpure | Data Analyst </title>
+    <meta name="description" content="Portfolio of Amay Chinchmalatpure - Data Analyst and AI/ML Engineer with experience at IBM and Google.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Noise Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="20" x2="18" y2="10"></line>
+                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                        <line x1="6" y1="20" x2="6" y2="14"></line>
+                    </svg>
+                </div>
+                <span>Amy<span class="text-gradient"></span></span>
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="Amy_P_Resume (1).pdf" class="btn-accent-sm" download="Amay_Chinchmalatpure_Resume.pdf" target="_blank">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7,10 12,15 17,10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Resume
+                </a>
+                <a href="#contact" class="btn-glow-sm">Get In Touch</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>c
+        <div class="nav-mobile" id="navMobile">
+            <a href="#about" class="nav-mobile-link">About</a>
+            <a href="#skills" class="nav-mobile-link">Skills</a>
+            <a href="#projects" class="nav-mobile-link">Projects</a>
+            <a href="#experience" class="nav-mobile-link">Experience</a>
+            <a href="#contact" class="nav-mobile-link">Contact</a>
+            <a href="resume.pdf" class="btn-accent" download="Amy_P_Resume (1).pdf" target="_blank">Download Resume</a>
+            <a href="#contact" class="btn-glow">Get In Touch</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-bg-shapes">
+            <div class="bg-shape shape-1"></div>
+            <div class="bg-shape shape-2"></div>
+            <div class="bg-shape shape-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <div class="hero-badge reveal">
+                        <span class="badge-dot"></span>
+                        <span>Available for Opportunities</span>
+                    </div>
+                    <h1 class="hero-title reveal">
+                        Hi, I'm <span class="text-gradient">Amay</span>
+                        <span class="hero-subtitle">
+                            <span id="typingText"></span>
+                            <span class="cursor"></span>
+                        </span>
+                    </h1>
+                    <p class="hero-description reveal">
+                        Transforming data into actionable insights. B.Tech student specializing in 
+                        <span class="text-gradient">AI & Data Science</span> with hands-on experience 
+                        at <span class="text-gradient-accent">IBM(Edu-net, AICTE)</span> and <span class="text-gradient-purple">Google</span>.
+                    </p>
+                    <div class="hero-buttons reveal">
+                        <a href="#projects" class="btn-glow">View My Work</a>
+                        <a href="#contact" class="btn-ghost">Let's Connect</a>
+                    </div>
+                    <div class="hero-socials reveal">
+                        <a href="https://linkedin.com/in/amy716" target="_blank" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="mailto:amaychinchmalatpure77@gmail.com" class="social-link social-accent">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                        <a href="tel:+917020859930" class="social-link social-highlight">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </a>
+                        <a href="https://github.com/Amy-7-ch" target="_blank" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-ring ring-1"></div>
+                        <div class="profile-ring ring-2"></div>
+                        <div class="profile-glow"></div>
+                        <div class="profile-wrapper">
+                            <img src="ei_1757682735199-removebg-preview (1).png" alt="Profile" class="profile-image">
+                        </div>
+                        <div class="floating-card card-1">
+                            <span class="card-value text-gradient">35+</span>
+                            <span class="card-label">Certifications</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <span class="card-value text-gradient-accent">4+</span>
+                            <span class="card-label">Projects</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <span class="card-value text-gradient-purple">2+</span>
+                            <span class="card-label">Internships</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"></polyline></svg>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual reveal">
+                    <svg class="about-chart" viewBox="0 0 400 300">
+                        <defs>
+                            <lineargradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="var(--primary)" stop-opacity="0.2"/>
+                                <stop offset="50%" stop-color="var(--primary)"/>
+                                <stop offset="100%" stop-color="var(--primary)" stop-opacity="0.2"/>
+                            </lineargradient>
+                            <filter id="glow"><fegaussianblur stdDeviation="3" result="blur"/><femerge><femergenode in="blur"/><femergenode in="SourceGraphic"/></femerge></filter>
+                        </defs>
+                        <line x1="20" y1="50" x2="380" y2="50" stroke="var(--border)" stroke-width="1"/>
+                        <line x1="20" y1="100" x2="380" y2="100" stroke="var(--border)" stroke-width="1"/>
+                        <line x1="20" y1="150" x2="380" y2="150" stroke="var(--border)" stroke-width="1"/>
+                        <line x1="20" y1="200" x2="380" y2="200" stroke="var(--border)" stroke-width="1"/>
+                        <line x1="20" y1="250" x2="380" y2="250" stroke="var(--border)" stroke-width="1"/>
+                        <path class="chart-line" d="M 30 200 Q 80 180 120 150 T 200 120 T 280 80 T 370 60" stroke="var(--primary)" stroke-width="3" fill="none" filter="url(#glow)"/>
+                        <circle class="chart-dot" cx="30" cy="200" r="6" fill="var(--primary)"/>
+                        <circle class="chart-dot" cx="120" cy="150" r="6" fill="var(--primary)"/>
+                        <circle class="chart-dot" cx="200" cy="120" r="6" fill="var(--accent)"/>
+                        <circle class="chart-dot" cx="280" cy="80" r="6" fill="var(--purple)"/>
+                        <circle class="chart-dot" cx="370" cy="60" r="6" fill="var(--primary)"/>
+                        <text x="30" y="280" fill="var(--muted-foreground)" font-size="12">2024</text>
+                        <text x="120" y="280" fill="var(--muted-foreground)" font-size="12">2025</text>
+                        <text x="200" y="280" fill="var(--muted-foreground)" font-size="12">Growth</text>
+                        <text x="280" y="280" fill="var(--muted-foreground)" font-size="12">Skills</text>
+                        <text x="350" y="280" fill="var(--muted-foreground)" font-size="12">Future</text>
+                    </svg>
+                    <div class="about-stat-card">
+                        <span class="stat-icon">📊</span>
+                        <div>
+                            <div class="stat-label">Analytics</div>
+                            <div class="stat-value">+180%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title reveal">Transforming Data Into <span class="text-gradient">Actionable Insights</span></h2>
+                    <p class="section-description reveal">
+                        I'm a passionate Data Analyst enthusiast currently pursuing B.Tech in 
+                        Artificial Intelligence and Data Science. With experience at IBM and Google, 
+                        I specialize in building intelligent systems that drive decision-making.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-card reveal">
+                            <div class="highlight-icon">🎓</div>
+                            <h3>B.Tech AI & DS</h3>
+                            <p>P.R. Pote Patil College, 2024-2028</p>
+                        </div>
+                        <div class="highlight-card reveal">
+                            <div class="highlight-icon">💼</div>
+                            <h3>IBM AI/ML Intern (Edu-net,AICTE)</h3>
+                            <p>Building cutting-edge AI solutions</p>
+                        </div>
+                        <div class="highlight-card reveal">
+                            <div class="highlight-icon">👥</div>
+                            <h3>GDG President</h3>
+                            <p>Leading Google Developer Group</p>
+                        </div>
+                        <div class="highlight-card reveal">
+                            <div class="highlight-icon">✨</div>
+                            <h3>Google Student Ambassador</h3>
+                            <p>Fostering tech community</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal">Skills & <span class="text-gradient">Technologies</span></h2>
+                <p class="section-description reveal">A comprehensive toolkit for data analysis, machine learning, and building intelligent systems</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal" data-color="primary">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16,18 22,12 16,6"></polyline><polyline points="8,6 2,12 8,18"></polyline></svg>
+                        </div>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-item"><span>Python</span><span class="skill-percent">90%</span></div>
+                        <div class="skill-bar"><div class="skill-fill primary" style="--width: 90%"></div></div>
+                        <div class="skill-item"><span>SQL</span><span class="skill-percent">85%</span></div>
+                        <div class="skill-bar"><div class="skill-fill primary" style="--width: 85%"></div></div>
+                        <div class="skill-item"><span>JavaScript</span><span class="skill-percent">75%</span></div>
+                        <div class="skill-bar"><div class="skill-fill primary" style="--width: 75%"></div></div>
+                        <div class="skill-item"><span>R</span><span class="skill-percent">70%</span></div>
+                        <div class="skill-bar"><div class="skill-fill primary" style="--width: 70%"></div></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-color="purple">
+                    <div class="skill-header">
+                        <div class="skill-icon purple">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path><path d="M20.84 4.61a10 10 0 0 0-8.45-2.53"></path></svg>
+                        </div>
+                        <h3>AI/ML</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-item"><span>Machine Learning</span><span class="skill-percent purple">88%</span></div>
+                        <div class="skill-bar"><div class="skill-fill purple" style="--width: 88%"></div></div>
+                        <div class="skill-item"><span>TensorFlow</span><span class="skill-percent purple">80%</span></div>
+                        <div class="skill-bar"><div class="skill-fill purple" style="--width: 80%"></div></div>
+                        <div class="skill-item"><span>scikit-learn</span><span class="skill-percent purple">85%</span></div>
+                        <div class="skill-bar"><div class="skill-fill purple" style="--width: 85%"></div></div>
+                        <div class="skill-item"><span>NLP</span><span class="skill-percent purple">75%</span></div>
+                        <div class="skill-bar"><div class="skill-fill purple" style="--width: 75%"></div></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-color="accent">
+                    <div class="skill-header">
+                        <div class="skill-icon accent">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                        </div>
+                        <h3>Data Analytics</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-item"><span>Data Visualization</span><span class="skill-percent accent">92%</span></div>
+                        <div class="skill-bar"><div class="skill-fill accent" style="--width: 92%"></div></div>
+                        <div class="skill-item"><span>Pandas</span><span class="skill-percent accent">90%</span></div>
+                        <div class="skill-bar"><div class="skill-fill accent" style="--width: 90%"></div></div>
+                        <div class="skill-item"><span>NumPy</span><span class="skill-percent accent">88%</span></div>
+                        <div class="skill-bar"><div class="skill-fill accent" style="--width: 88%"></div></div>
+                        <div class="skill-item"><span>Plotly</span><span class="skill-percent accent">82%</span></div>
+                        <div class="skill-bar"><div class="skill-fill accent" style="--width: 82%"></div></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-color="primary">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                        </div>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-item"><span>SQL</span><span class="skill-percent">85%</span></div>
+                        <div class="skill-bar"><div class="skill-fill primary" style="--width: 85%"></div></div>
+                        <div class="skill-item"><span>Query Optimization</span><span class="skill-percent">78%</span></div>
+                        <div class="skill-bar"><div class="skill-fill primary" style="--width: 78%"></div></div>
+                        <div class="skill-item"><span>Database Design</span><span class="skill-percent">75%</span></div>
+                        <div class="skill-bar"><div class="skill-fill primary" style="--width: 75%"></div></div>
+                        <div class="skill-item"><span>Data Preprocessing</span><span class="skill-percent">88%</span></div>
+                        <div class="skill-bar"><div class="skill-fill primary" style="--width: 88%"></div></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-color="accent">
+                    <div class="skill-header">
+                        <div class="skill-icon accent">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path></svg>
+                        </div>
+                        <h3>Cloud & Tools</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-item"><span>Google Cloud</span><span class="skill-percent accent">80%</span></div>
+                        <div class="skill-bar"><div class="skill-fill accent" style="--width: 80%"></div></div>
+                        <div class="skill-item"><span>IBM Watson</span><span class="skill-percent accent">75%</span></div>
+                        <div class="skill-bar"><div class="skill-fill accent" style="--width: 75%"></div></div>
+                        <div class="skill-item"><span>Git/GitHub</span><span class="skill-percent accent">85%</span></div>
+                        <div class="skill-bar"><div class="skill-fill accent" style="--width: 85%"></div></div>
+                        <div class="skill-item"><span>Data Reporting</span><span class="skill-percent accent">90%</span></div>
+                        <div class="skill-bar"><div class="skill-fill accent" style="--width: 90%"></div></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-color="purple">
+                    <div class="skill-header">
+                        <div class="skill-icon purple">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14,2 14,8 20,8"></polyline></svg>
+                        </div>
+                        <h3>Frameworks</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-item"><span>TensorFlow</span><span class="skill-percent purple">80%</span></div>
+                        <div class="skill-bar"><div class="skill-fill purple" style="--width: 80%"></div></div>
+                        <div class="skill-item"><span>Computer Vision</span><span class="skill-percent purple">72%</span></div>
+                        <div class="skill-bar"><div class="skill-fill purple" style="--width: 72%"></div></div>
+                        <div class="skill-item"><span>Web Development</span><span class="skill-percent purple">75%</span></div>
+                        <div class="skill-bar"><div class="skill-fill purple" style="--width: 75%"></div></div>
+                        <div class="skill-item"><span>API Integration</span><span class="skill-percent purple">70%</span></div>
+                        <div class="skill-bar"><div class="skill-fill purple" style="--width: 70%"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <span class="stat-number text-gradient">5+</span>
+                    <span class="stat-text">Certifications</span>
+                </div>
+                <div class="stat-card reveal">
+                    <span class="stat-number text-gradient-accent">4+</span>
+                    <span class="stat-text">Major Projects</span>
+                </div>
+                <div class="stat-card reveal">
+                    <span class="stat-number text-gradient-purple">3+</span>
+                    <span class="stat-text">Internships</span>
+                </div>
+                <div class="stat-card reveal">
+                    <span class="stat-number text-gradient">1000+</span>
+                    <span class="stat-text">Community Members</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal">Data-Driven <span class="text-gradient">Projects</span></h2>
+                <p class="section-description reveal">Showcasing innovative solutions that leverage AI, ML, and data analytics</p>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon">🧠</div>
+                    </div>
+                    <h3 class="project-title">PramaanX</h3>
+                    <p class="project-subtitle">intelligent Voter Authentication & Verification System</p>
+                    <p class="project-description">Voter authentication platform with biometric verification and fraud prevention using advanced computer vision algorithms.</p>
+                    <div class="project-metrics">
+                        <div><span class="metric-value text-gradient">99.2%</span><span class="metric-label">Accuracy</span></div>
+                        <div><span class="metric-value text-gradient-accent">&lt;2s</span><span class="metric-label">Processing</span></div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag primary">Python</span>
+                        <span class="tag purple">Machine Learning</span>
+                        <span class="tag accent">Computer Vision</span>
+                    </div>
+                </article>
+                <article class="project-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon">⚡</div>
+                    </div>
+                    <h3 class="project-title">Electro Detector</h3>
+                    <p class="project-subtitle">Anomaly Detection System</p>
+                    <p class="project-description">ML-powered system for analyzing electrical patterns and detecting anomalies in real-time, helping prevent equipment failures.</p>
+                    <div class="project-metrics">
+                        <div><span class="metric-value text-gradient">97.5%</span><span class="metric-label">Detection Rate</span></div>
+                        <div><span class="metric-value text-gradient-accent">&lt;1%</span><span class="metric-label">False Positives</span></div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag primary">Python</span>
+                        <span class="tag accent">TensorFlow</span>
+                        <span class="tag highlight">scikit-learn</span>
+                    </div>
+                </article>
+                <article class="project-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon">⚖️</div>
+                    </div>
+                    <h3 class="project-title">NyayaInsight</h3>
+                    <p class="project-subtitle">Legal Analytics Platform</p>
+                    <p class="project-description">AI-driven legal analytics platform for case prediction and document analysis using advanced NLP techniques.</p>
+                    <div class="project-metrics">
+                        <div><span class="metric-value text-gradient-purple">89%</span><span class="metric-label">Prediction</span></div>
+                        <div><span class="metric-value text-gradient">10K+</span><span class="metric-label">Documents</span></div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag primary">Python</span>
+                        <span class="tag purple">NLP</span>
+                        <span class="tag primary">Machine Learning</span>
+                    </div>
+                </article>
+                <article class="project-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon">📊</div>
+                    </div>
+                    <h3 class="project-title">Data Analytics Dashboard</h3>
+                    <p class="project-subtitle">Interactive Visualization</p>
+                    <p class="project-description">Comprehensive data visualization dashboard for analyzing complex datasets with interactive charts and automated reporting.</p>
+                    <div class="project-metrics">
+                        <div><span class="metric-value text-gradient-accent">50+</span><span class="metric-label">Datasets</span></div>
+                        <div><span class="metric-value text-gradient-purple">25+</span><span class="metric-label">Charts</span></div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag primary">Python</span>
+                        <span class="tag accent">Pandas</span>
+                        <span class="tag purple">Plotly</span>
+                    </div>
+                </article>
+            </div>
+            <div class="section-cta reveal">
+                <a href="https://github.com/Amy-7-ch" target="_blank" class="btn-ghost">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    View All Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal">Experience & <span class="text-gradient">Education</span></h2>
+            </div>
+            <div class="experience-grid">
+                <div class="experience-column">
+                    <div class="experience-header reveal">
+                        <div class="exp-icon">💼</div>
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <div>
+                                        <h4>AI/ML Intern</h4>
+                                        <p class="timeline-company">IBM(Edu-net, AICTE)</p>
+                                    </div>
+                                    <span class="timeline-badge">Current</span>
+                                </div>
+                                <p class="timeline-meta">Remote • Dec 2025 - Present</p>
+                                <p class="timeline-desc">Working on cutting-edge AI and ML projects, developing intelligent solutions for enterprise applications.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot accent"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <div>
+                                        <h4>Google Student Ambassador (President)</h4>
+                                        <p class="timeline-company">Google - GDG on Campus</p>
+                                    </div>
+                                    <span class="timeline-badge">Current</span>
+                                </div>
+                                <p class="timeline-meta">Amravati, Maharashtra • Aug 2025 - Present</p>
+                                <p class="timeline-desc">Representing Google on campus, organizing tech events, and fostering a community of developers.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot purple"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <div>
+                                        <h4>Technical Head</h4>
+                                        <p class="timeline-company">P.R. Pote Patil College</p>
+                                    </div>
+                                    <span class="timeline-badge">Current</span>
+                                </div>
+                                <p class="timeline-meta">Amravati • July 2025 - Present</p>
+                                <p class="timeline-desc">Leading technical initiatives, mentoring students, and organizing hackathons.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Web Development Intern</h4>
+                                <p class="timeline-company">Prodigy InfoTech Pvt Ltd</p>
+                                <p class="timeline-meta">Remote • June 2025 - July 2025</p>
+                                <p class="timeline-desc">Developed responsive web applications with modern technologies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-column">
+                    <div class="experience-header reveal">
+                        <div class="exp-icon">🎓</div>
+                        <h3>Education</h3>
+                    </div>
+                    <div class="education-card reveal">
+                        <h4>B.Tech in AI & Data Science</h4>
+                        <p class="edu-institution">P.R. Pote Patil College of Engineering</p>
+                        <p class="edu-meta">Amravati, Maharashtra • 2024 - 2028</p>
+                    </div>
+                    
+                    <div class="experience-header reveal" style="margin-top: 2rem;">
+                        <div class="exp-icon">🏆</div>
+                        <h3>Certifications</h3>
+                    </div>
+                    <div class="certifications-grid">
+                        <div class="cert-card reveal">
+                            <div class="cert-icon">🐍</div>
+                            <div>
+                                <h4>Python Full Stack</h4>
+                                <p>Eduskil Academy</p>
+                            </div>
+                        </div>
+                        <div class="cert-card reveal">
+                            <div class="cert-icon">📊</div>
+                            <div>
+                                <h4>Data Science</h4>
+                                <p>Internshala</p>
+                            </div>
+                        </div>
+                        <div class="cert-card reveal">
+                            <div class="cert-icon">✅</div>
+                            <div>
+                                <h4>Python Certified</h4>
+                                <p>HackerRank</p>
+                            </div>
+                        </div>
+                        <div class="cert-card reveal">
+                            <div class="cert-icon">🤖</div>
+                            <div>
+                                <h4>Gen AI Analytics</h4>
+                                <p>Tata</p>
+                            </div>
+                        </div>
+                        <div class="cert-card reveal">
+                            <div class="cert-icon">💎</div>
+                            <div>
+                                <h4>Gemini AI</h4>
+                                <p>Google</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal">Let's <span class="text-gradient">Connect</span></h2>
+                <p class="section-description reveal">Have a project in mind or want to collaborate? I'd love to hear from you!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 class="reveal">Contact Information</h3>
+                    <div class="contact-cards">
+                        <a href="mailto:amaychinchmalatpure77@gmail.com" class="contact-card reveal">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <p class="contact-value">er.engineer77@gmail.com</p>
+                            </div>
+                            <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12,5 19,12 12,19"></polyline></svg>
+                        </a>
+                        <a href="tel:+917020859930" class="contact-card reveal">
+                            <div class="contact-icon accent">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="contact-label">Phone</p>
+                                <p class="contact-value">+91 7020859930</p>
+                            </div>
+                            <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12,5 19,12 12,19"></polyline></svg>
+                        </a>
+                        <a href="https://linkedin.com/in/amy716" target="_blank" class="contact-card reveal">
+                            <div class="contact-icon purple">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </div>
+                            <div>
+                                <p class="contact-label">LinkedIn</p>
+                                <p class="contact-value">linkedin.com/in/amy716</p>
+                            </div>
+                            <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12,5 19,12 12,19"></polyline></svg>
+                        </a>
+                        <div class="contact-card reveal">
+                            <div class="contact-icon highlight">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div>
+                                <p class="contact-label">Location</p>
+                                <p class="contact-value">Amravati, Maharashtra, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="availability-card reveal">
+                        <h4>Open for Opportunities</h4>
+                        <p>I'm currently looking for internship opportunities in Data Analytics. Let's build something amazing together!</p>
+                        <div class="availability-status">
+                            <span class="status-dot"></span>
+                            <span>Available for hire</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container reveal">
+                    <h3>Send a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Collaboration" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-glow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22,2 15,22 11,13 2,9 22,2"></polygon></svg>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <div class="logo-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                        </div>
+                        <span>Amy<span class="text-gradient"></span></span>
+                    </a>
+                    <p>Data Analyst passionate about transforming data into actionable insights.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/amy716" target="_blank" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                        <a href="mailto:er.engineer77@gmail.com" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+                        <a href="tel:+917020859930" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a>
+                        <a href="https://github.com/Amy-7-ch" target="_blank" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Amay Chinchmalatpure. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
